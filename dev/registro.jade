@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+html(lang="en")
+    
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Plaza Olmos
+        <!-- Titulo -->
+        
+        <!-- Fuente 'Lato' -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,100,100italic,900,300italic,400italic,700italic,900italic'   rel='stylesheet' type='text/css'>        
+        
+        <!-- CSS Animaciones -->
+        <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
+        
+        <!-- CSS Iconos -->
+        <link rel="stylesheet" href="css/icons.css" media="screen" title="no title" charset="utf-8">
+        
+        <!-- CSS Styles -->
+        link(rel="stylesheet" ,href="css/styles.css")
+                
+    body
+        
+        div#wrapper <!-- wrapper -->
+            main#main <!-- Main -->
+        
+        
+        
+        
+                div#header_nav_wrapper
+                    div#header_nav_wrapper_center
+                        header#header 
+                            img(src="img/logo.png", alt="" id="logomenu")
+                            h2#plazacaramountmenu
+                                span.plaza#plazamenu Plaza 
+                                span.caramount#caramountmenu Caramount
+                            <!-- Fin H2 -->
+                        <!-- Fin Header -->
+                        nav#nav
+                            div#toggle
+                                span.icon-menu
+                            <!-- Fin Toggle -->
+                            ul
+                                li
+                                    a(href="index.html", id="amenu1") Inicio
+                                li
+                                    a(href="nosotros.html", id="amenu2") Nosotros
+                                li
+                                    a(href="tiendas.html", id="amenu3") Tiendas
+                                li
+                                    a(href="construccion.html", id="amenu4") Promociones
+                                li
+                                    a(href="#", id="amenu") Registro
+                        <!-- Fin Nav -->
+                    <!-- Fin Header Nav Grapper Center -->
+                <!-- Fin Header Nav wrapper -->
+                
+                div.contenedor-formulario
+                    div.wrap
+                        form(action="" class="formulario" name="formulario_registro" method="get")
+                            div
+                                div.input-group
+                                    input(type="text" id="nombre" name="nombre")
+                                    label(class="label" for="nombre") Nombre:
+                                div.input-group
+                                    input(type="email" id="correo" name="correo")
+                                    label(class="label" for="correo") Correo:
+                                div.input-group
+                                    input(type="password" id="pass" name="pass")
+                                    label(class="label" for="pass") Contraseña:
+                                div.input-group
+                                    input(type="password" id="pass2" name="pass2")
+                                    label(class="label" for="pass2") Repetir Contraseña:
+                                div(class="input-group radio")
+                                    input(type="radio" name="sexo" id="hombre" value="Hombre")
+                                    label(for="hombre") Hombre
+                                    input(type="radio" name="sexo" id="mujer" value="Mujer")
+                                    label(for="mujer") Mujer
+                                div(class="input-group checkbox")
+                                    input(type="checkbox" name="terminos" id="terminos" value="true")
+                                    label(for="terminos") Acepto los Terminos y Condiciones
+                                    
+                                input(type="submit" id="btn-submit" value="Enviar")
+                        <!-- Fin Form --> 
+                    <!-- Fin wrap formulario --> 
+                <!-- Fin Formulario--> 
+                
+                footer#footer2
+                    div.foot_contain
+                        div.fot1
+                            a(class="fot11" href="index.html") Plaza Caramount
+                            p.fot12 Copyright 2017 | All Rights Reserved
+                        div.fot2
+                            span.fot21 By
+                            a(class="fot22" href="https://www.facebook.com/jorge.tato.39") Jorge Tato
+                    
+            <!-- Fin Main -->       
+        <!-- Fin Wrapper -->        
+        
+script(src="js/jquery-3.2.1.min.js")
+<!-- JS Jquery -->
+
+script(src="js/scripts.js")
+<!-- JS Scripts -->
+    

@@ -1,0 +1,116 @@
+/*=======================================================*/
+/*=======================================================*/
+/*======================= SLIDER ========================*/
+/*=======================================================*/
+/*=======================================================*/
+
+.slider-container
+	position: relative
+	margin: 0
+	margin-top: 100px
+    padding: 0
+	width: 100%
+	height: calc(100vh - 100px)
+	background: #FFF
+	margin-bottom: 40px
+
+
+.slider-wrapper
+	position: relative
+	z-index: 1
+	height: 100%
+	width: 100%
+	overflow: hidden
+
+
+.slider-wrapper li
+	display: none
+	width: 100%
+	height: 100%
+
+li.slide-current
+	display: block
+
+
+.slider-wrapper li img
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: 0
+	right: 0
+	width: 100%
+
+/* ====================================== Caption ====================================== */
+.caption
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	background: rgba(0,0,0,0.6)
+	padding: 35px
+	-webkit-transform: translateY(100%)
+	-ms-transform: translateY(100%)
+	-o-transform: translateY(100%)
+	transform: translateY(100%)
+	-webkit-transition: all 0.3s ease
+	-o-transition: all 0.3s ease
+	transition: all 0.3s ease
+
+
+.caption-title
+	color: $a1
+	font-weight: 700
+	font-size: 1.6em
+	margin-bottom: 10px
+
+.caption-title2
+	color: $a1
+	font-weight: 700
+	font-size: 50px
+	margin-bottom: 10px
+
+
+.caption p
+	color: rgba(#FFF, .75)
+	font-size: 1.4em
+	line-height: 1.3em
+
+
+.slider-wrapper li:hover .caption
+	-webkit-transform: translateY(0)
+	-ms-transform: translateY(0)
+	-o-transform: translateY(0)
+	transform: translateY(0)
+
+
+ /* ====================================== Controles del Slider ====================================== */
+
+.slider-controls
+	position: absolute
+	z-index: 100
+	bottom: 0
+	text-align: center
+	right: 0
+	left: 0
+	padding-bottom: 10px
+
+.slider-controls li
+	background: rgba($a1, 0.1)
+	-webkit-border-radius: 50%
+	-moz-border-radius: 50%
+	border-radius: 50%
+	border: 2px solid $a2
+	display: inline-block
+	height: 16px
+	width: 16px
+	margin: 0 5px
+	cursor: pointer
+
+.slider-controls li.active
+	background: $a1
+
+/*=======================================================*/
+/*=======================================================*/
+/*===================== FIN SLIDER ======================*/
+/*=======================================================*/
+/*=======================================================*/

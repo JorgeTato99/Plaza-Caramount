@@ -1,0 +1,145 @@
+/*=======================================================*/
+/*=======================================================*/
+/*==================== HEADER & NAV =====================*/
+/*=======================================================*/
+/*=======================================================*/
+
+#header_nav_wrapper
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    height: 100px
+    background: rgba(26, 26, 26, 1)
+    transition: all ease 0.25s
+    border-bottom: 1px solid rgba(#FFF , .6)
+    z-index: 100000
+    &.nav_comprimido
+        height: 60px
+        background: rgba(255, 255, 255, 0.95)
+        border-bottom: 1px solid rgba($a2, .1)
+
+    #header_nav_wrapper_center
+        width: 96%
+        max-width: 1280px
+        margin: auto
+        height: 100%
+
+    /* ========== HEADER ========== */
+    #header
+        position: relative
+        width: 25%
+        height: 100%
+        float: left
+
+        /* ========== PLAZA CARAMOUNT ========== */
+        h2
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: calc(10% + 90px)
+            transition: all ease 0.25s
+            &h2_comprimido
+                left: calc(10% + 50px)
+                transition: all ease 0.25s
+
+            /* ========== PLAZA ========== */
+            .plaza
+                font-size: 30px
+                font-weight: 900
+                color: rgba(#FFF, .9)
+                text-transform: uppercase
+                transition: all ease 0.25s
+                @media screen and (max-width: 1200px)
+                    font-size: 24px
+                    font-weight: 700
+                    transition: all ease 0.25s
+                &.plaza_comprimido
+                    color: rgba($a2, .9)
+                    transition: all ease 0.25s
+                    font-size: 20px
+            /* ========== FIN PLAZA ========== */
+
+            /* ========== CARAMOUNT ========== */
+            .caramount
+                font-size: 30px
+                font-weight: 900
+                color: $a1
+                text-transform: uppercase
+                transition: all ease 0.25s
+                @media screen and (max-width: 1200px)
+                    font-size: 24px
+                    font-weight: 700
+                    transition: all ease 0.25s
+                &.caramount_comprimido
+                    color: rgba($a1, .9)
+                    transition: all ease 0.25s
+                    font-size: 20px
+            /* ========== FIN HIT ========== */
+        /* ========== FIN PLAZA CARAMOUNT ========== */
+
+        /* ========== LOGO ========== */
+        img
+            position: absolute
+            left: 0
+            height: 80px
+            top: 50%
+            transform: translateY(-50%)
+            transition: all ease 0.25s
+            @media screen and (max-width: 1200px)
+                height: 70px
+                transition: all ease 0.25s
+            &.img_comprimido
+                height: 50px
+                left: 10%
+                top: 50%
+                transform: translateY(-50%)
+                transition: all ease 0.25s
+
+        /* ========== FIN LOGO ========== */
+    /* ========== FIN HEADER ========== */
+
+    /* ========== NAV ========== */
+    #nav
+        position: relative
+        float: right
+        height: 100%
+
+        #toggle
+            display: none
+
+        ul
+            display: inline-block
+            height: 100%
+            li
+                display: table
+                float: left
+                height: 100%
+                a
+                    display: table-cell
+                    vertical-align: middle
+                    height: 100%
+                    padding: 0 20px
+                    text-decoration: none
+                    text-transform: uppercase
+                    font-weight: 900
+                    color: rgba(#FFF, .9)
+                    font-size: 15px
+                    letter-spacing: .5px
+                    transition: all ease 0.3s
+                    @media screen and (max-width: 1200px)
+                        padding: 0 10px
+                    &#amenu
+                        color: $a1
+                    &.a_comprimido
+                        color: rgba($a2, .9)
+                    &:hover
+                        color: $a1
+                        transition: all ease 0.3s
+/* ========== FIN NAV ========== */
+
+/*=======================================================*/
+/*=======================================================*/
+/*================== FIN HEADER & NAV ===================*/
+/*=======================================================*/
+/*=======================================================*/
